@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>
+        meine fancy html+css
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1 align="center" class="fancy-start">
+        Witam na fancy str.
+    </h1>
+    <h3>
+        Na tej str wytłumacze troche css.
+    </h3>
+    <span>
+        To będzie tak wyglądać:
+    </span>
+    <ul>
+        <li>
+            zobaczysz pudełko div lub <font color="green">zielony tekst</font>
+        </li>
+        <li>
+            bedzie miało efekty(czasem po nakierowani wskaźnikiem)
+        </li>
+        <li>
+            pod tym będzie napisany element html i css którym zrobiono ten efekt
+        </li>
+    </ul>
+    <hr>
+    <div class="side-move div-look">
+        ruch w bok po najechaniu
+    </div>
+    <h3>
+        html:
+    </h3>
+    <span class="red-text">
+        &lt;div class="side-move div-look"&gt;
+        ruch w bok po najechaniu
+        &lt;/div&gt;
+    </span>
+    <h3>
+        css:
+    </h3>
+    <span class="blue-text">
+        .div-look {
+        border: 4px solid red;
+        border-radius: 4px;
+        background-color: pink;
+        width: 250px;
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        .side-move {
+        margin-left: 2px;
+        transition: margin 0.5s ease;
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        .side-move:hover {
+        margin-left: 12px;
+        }
+    </span>
+    <hr>
+    <div class="div-look shake">
+        efekt shake na div
+    </div>
+    <span class="green-text shake">
+        efekt shake na tekscie
+    </span>
+    <h3>
+        html:
+    </h3>
+    <span class="red-text">
+        &lt;div class="div-look shake"&gt;
+        efekt shake na div
+        &lt;/div&gt;
+        <br>
+        <br>
+        &lt;span class="green-text shake"&gt;
+        efekt shake na tekscie
+        &lt;/span&gt;
+    </span>
+    <h3>
+        css:
+    </h3>
+    <span class="blue-text">
+        .shake {
+        margin-left: 25px;
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        .shake:hover {
+        animation: shake-anim 0.5s;
+        transition: margin;
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        @keyframes shake-anim {
+        <br>
+        10% {
+        margin-left: 20px;
+        }
+        <br>
+        20% {
+        margin-left: 29px;
+        }
+        <br>
+        30% {
+        margin-left: 21px;
+        }
+        <br>
+        40% {
+        margin-left: 28px;
+        }
+        <br>
+        50% {
+        margin-left: 22px;
+        }
+        <br>
+        60% {
+        margin-left: 27px;
+        }
+        <br>
+        70% {
+        margin-left: 23px;
+        }
+        <br>
+        80% {
+        margin-left: 26px;
+        }
+        <br>
+        90% {
+        margin-left: 24px;
+        }
+        <br>
+        100% {
+        margin-left: 25px;
+        }
+        <br>
+        }
+    </span>
+    <hr>
+    <br>
+    <span class="rainbow">
+        tęcza
+    </span>
+    <br>
+    <h3>
+        html:
+    </h3>
+    <span class="red-text">
+        &lt;span class="rainbow"&gt;
+            tęcza
+        &lt;/span&gt;
+    </span>
+    <h3>
+        css:
+    </h3>
+    <span class="blue-text">
+        .rainbow {
+        <br>
+            padding: 10px 20px;
+        <br>
+            font-size: 18px;
+        <br>
+            border: none;
+        <br>
+            border-radius: 8px;
+        <br>
+            color: white;
+        <br>
+            cursor: position;
+        <br>
+            animation: rainbowColors 7s infinite;
+        <br>
+            transition: background-color 1s ease-in-out;
+        <br>
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        @keyframes rainbowColors {
+        <br>
+            0% {
+                background-color: red;
+            }
+        <br>
+            14% {
+                background-color: orange;
+            }
+        <br>
+            28% {
+                background-color: yellow;
+                color: black;
+            }
+        <br>
+            42% {
+                background-color: green;
+                color: white;
+            }
+        <br>
+            57% {
+                background-color: blue;
+            }
+        <br>
+            71% {
+                background-color: indigo;
+            }
+        <br>
+            85% {
+                background-color: violet;
+            }
+        <br>
+            100% {
+                background-color: red;
+            }
+        <br>
+        }
+    </span>
+    <hr>
+    <div class="div-look rotate">
+        rotacjia
+    </div>
+    <h3>
+        html:
+    </h3>
+    <span class="red-text">
+        &lt;div class="div-look rotate"&gt;
+        rotacjia
+        &lt;/div&gt;
+    </span>
+    <h3>
+        css:
+    </h3>
+    <span class="blue-text">
+        .rotate {
+        <br>
+            width: 100px;
+        <br>
+            height: 100px;
+        <br>
+            margin-left: 10px;
+        <br>
+            font-size: 15px;
+        <br>
+            text-align: center;
+        <br>
+            padding: 10px;
+        <br>
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        .rotate:hover {
+        <br>
+            animation: div-rotator 0.3s ease-in-out;
+            animation-fill-mode: forwards;
+        <br>
+        }
+    </span>
+    <br>
+    <br>
+    <span class="blue-text">
+        @keyframes div-rotator {
+        <br>
+            form {
+                transform: rotate(0deg);
+            }
+        <br>
+            to {
+                transform: rotate(360deg);
+            }
+        <br>
+        }
+    </span>
+    <hr>
+    <style>
+        .fancy-start {
+            font-family: 'Georgia';
+        }
+        .red-text {
+            color: red;
+        }
+        .blue-text {
+            color: blue;
+        }
+        .green-text {
+            color: green;
+        }
+        .div-look {
+            border: 4px solid red;
+            border-radius: 4px;
+            background-color: pink;
+            width: 250px;
+        }
+        .side-move {
+            margin-left: 2px;
+            transition: margin 0.5s ease;
+        }
+        .side-move:hover {
+            margin-left: 12px;
+        }
+        .shake {
+            margin-left: 25px;
+        }
+        .shake:hover {
+            animation: shake-anim 0.5s;
+            transition: margin;
+        }
+        @keyframes shake-anim {
+            10% {
+                margin-left: 20px;
+            }
+            20% {
+                margin-left: 29px;
+            }
+            30% {
+                margin-left: 21px;
+            }
+            40% {
+                margin-left: 28px;
+            }
+            50% {
+                margin-left: 22px;
+            }
+            60% {
+                margin-left: 27px;
+            }
+            70% {
+                margin-left: 23px;
+            }
+            80% {
+                margin-left: 26px;
+            }
+            90% {
+                margin-left: 24px;
+            }
+            100% {
+                margin-left: 25px;
+            }
+        }
+        .rainbow {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: position;
+            animation: rainbowColors 7s infinite;
+            transition: background-color 1s ease-in-out;
+        }
+        @keyframes rainbowColors {
+            0% {
+                background-color: red;
+            }
+            14% {
+                background-color: orange;
+            }
+            28% {
+                background-color: yellow;
+                color: black;
+            }
+            42% {
+                background-color: green;
+                color: white;
+            }
+            57% {
+                background-color: blue;
+            }
+            71% {
+                background-color: indigo;
+            }
+            85% {
+                background-color: violet;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+        .rotate {
+            width: 100px;
+            height: 100px;
+            margin-left: 10px;
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+        }
+        .rotate:hover {
+            animation: div-rotator 0.3s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+@keyframes div-rotator {
+            form {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+</html>
